@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Get script directory and change to it
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cd "$SCRIPT_DIR"
+
 # Parse command line arguments
 LVGL_VERSION=""
 DISPLAY_WIDTH=""
@@ -105,6 +109,9 @@ if [ "$MAJOR_VERSION" -lt 9 ]; then
     fi
     cd ..
 fi
+
+# Set Emscripten cache directory to local project folder
+export EM_CACHE="${SCRIPT_DIR}/.emscripten-cache"
 
 # Create build directory
 mkdir -p build
