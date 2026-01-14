@@ -19,8 +19,8 @@
 #include "lv_drivers/indev/mousewheel.h"
 #include "lv_drivers/indev/keyboard.h"
 
-#include "src/ui/ui.h"
-#include "src/ui/screens.h"
+#include "src/ui.h"
+#include "src/screens.h"
 
 /*********************
  *      DEFINES
