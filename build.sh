@@ -150,7 +150,8 @@ NUM_CORES=$(nproc)
 # Run emcmake cmake
 echo "Running emcmake cmake..."
 if [ -n "$FONTS_PRELOAD" ]; then
-    emcmake cmake .. -DFONTS_PRELOAD="$FONTS_PRELOAD"
+    # Pass fonts flags through CMAKE_EXE_LINKER_FLAGS so they're actually used
+    emcmake cmake .. -DCMAKE_EXE_LINKER_FLAGS="$FONTS_PRELOAD"
 else
     emcmake cmake ..
 fi
