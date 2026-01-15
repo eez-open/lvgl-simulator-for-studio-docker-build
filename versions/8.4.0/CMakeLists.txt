@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.12)
-project (v8-no-flow-no-eez-framework)
+project (eez-studio-lvgl-simulator)
 
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -s USE_SDL=2")
 set(CMAKE_CXX_FLAGS "${CMAKE_C_FLAGS} -O2 -s USE_SDL=2")
