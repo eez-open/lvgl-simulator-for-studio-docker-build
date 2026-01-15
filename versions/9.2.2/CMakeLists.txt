@@ -22,7 +22,7 @@ if(DEFINED ENV{ENCODER_GROUP})
     add_definitions(-DENCODER_GROUP=$ENV{ENCODER_GROUP})
 endif()
 if(DEFINED ENV{KEYBOARD_GROUP})
-    add_definitions(-KEYBOARD_GROUP=$ENV{KEYBOARD_GROUP})
+    add_definitions(-DKEYBOARD_GROUP=$ENV{KEYBOARD_GROUP})
 endif()
 
 include_directories(

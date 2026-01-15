@@ -62,11 +62,11 @@ void setup() {
 #endif
  
 #ifdef ENCODER_GROUP
-    lv_indev_set_group(enc_indev, groups.ENCODER_GROUP); // groups.encoder_group
+    lv_indev_set_group(enc_indev, ENCODER_GROUP);
 #endif
 
 #ifdef KEYBOARD_GROUP
-    lv_indev_set_group(kb_indev, groups.KEYBOARD_GROUP); // groups.keyboard_group
+    lv_indev_set_group(kb_indev, KEYBOARD_GROUP);
 #endif
     
     ui_init();
