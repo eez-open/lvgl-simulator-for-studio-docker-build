@@ -58,7 +58,7 @@ if [ -n "$FONTS_FILE" ] && [ -f "$FONTS_FILE" ]; then
     export FONTS_FILE
     
     # Build Emscripten preload flags for each font
-    while IFS= read -r font_path; do
+    while IFS= read -r font_path || [ -n "$font_path" ]; do
         if [ -n "$font_path" ]; then
             # Extract directory path without leading slash for preload-file
             font_dir=$(dirname "$font_path")
