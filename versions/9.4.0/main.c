@@ -62,10 +62,12 @@ void setup() {
 #endif
  
 #ifdef ENCODER_GROUP
+    printf("Set encoder group\n");
     lv_indev_set_group(enc_indev, ENCODER_GROUP);
 #endif
 
 #ifdef KEYBOARD_GROUP
+    printf("Set keyboard group\n");
     lv_indev_set_group(kb_indev, KEYBOARD_GROUP);
 #endif
     
