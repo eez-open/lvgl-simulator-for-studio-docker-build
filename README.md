@@ -4,7 +4,7 @@ A web-based LVGL simulator built with Emscripten that compiles to WebAssembly. T
 
 ## Features
 
-- **Multi-version LVGL Support**: Compatible with LVGL versions 8.4.0, 9.2.2, 9.3.0, and 9.4.0
+- **Multi-version LVGL Support**: Compatible with LVGL versions 8.4.0, 9.2.2, 9.3.0, 9.4.0 and 9.5.0
 - **Configurable Display**: Customizable display width and height
 - **WebAssembly-based**: Runs directly in the browser with no native compilation required
 - **SDL2 Integration**: Uses SDL2 for rendering and input handling
@@ -48,7 +48,7 @@ Build the simulator with a specific LVGL version and display dimensions:
 ```
 
 **Arguments:**
-- `--lvgl=<version>` (required): LVGL version to use (e.g., 8.4.0, 9.2.2, 9.3.0, 9.4.0)
+- `--lvgl=<version>` (required): LVGL version to use (e.g., 8.4.0, 9.2.2, 9.3.0, 9.4.0, 9.5.0)
 - `--display-width=<width>` (optional): Display width in pixels
 - `--display-height=<height>` (optional): Display height in pixels
 
@@ -71,7 +71,8 @@ After building, open `build/index.html` in a web browser to run the simulator.
 │   ├── 8.4.0/
 │   ├── 9.2.2/
 │   ├── 9.3.0/
-│   └── 9.4.0/
+│   ├── 9.4.0/
+│   └── 9.5.0/
 ├── lvgl/                 # LVGL library (submodule)
 └── lv_drivers/           # LVGL drivers (submodule)
 ```
